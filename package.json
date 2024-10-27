@@ -1,0 +1,27 @@
+{
+  "name": "express-github-oauth2",
+  "version": "1.0.0",
+  "description": "Express.js app to read user info from Github via OAuth 2.0 Authorization Code flow",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "express",
+    "oauth2",
+    "github",
+    "authorization"
+  ],
+  "author": "hasanciftcii26@gmail.com",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}

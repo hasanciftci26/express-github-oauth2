@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub OAuth Example</title>
+  <style>
+    /* Base styles */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #4A90E2, #9013FE);
+      color: #fff;
+    }
+
+    /* Header */
+    header {
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    /* Main container */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(20px);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .container p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: #f0f0f0;
+    }
+
+    /* Button */
+    .auth-button {
+      padding: 12px 24px;
+      font-size: 1.2rem;
+      color: #4A90E2;
+      background-color: #fff;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    }
+    .auth-button:hover {
+      background-color: #4A90E2;
+      color: #fff;
+      box-shadow: 0 6px 12px rgba(255, 255, 255, 0.5);
+    }
+
+    /* Footer */
+    footer {
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ddd;
+      position: absolute;
+      bottom: 10px;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>GitHub OAuth Example</h1>
+    <p>Simple and secure GitHub authentication</p>
+  </header>
+
+  <!-- Main Container -->
+  <div class="container">
+    <p>Click the button below to log in with GitHub and access your profile and repositories securely:</p>
+    <a href="/auth/github">
+      <button class="auth-button">Login with GitHub</button>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 OAuth Example App. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
